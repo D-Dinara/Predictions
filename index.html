@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js">
+        <div class="container">
+            <div class="header">
+                <h1>Find out what the future holds for you!</h1>
+            </div>
+            <div class="cards">
+                <div class="pick-card">
+                    <h3 id="pickCard">Pick a card by clicking this card deck</h3>
+                    <img id="deck" src="deck.jpg" alt="Cards">
+                </div>
+
+                <div class="prediction-card">
+                    <h3 id="predictionCard">Click the card and see your prediction</h3>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card-picked">
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="prediction">
+                                <img id="card" src="card.jpg" alt="Card">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn"> Click here to put this card back to the deck and pick another one</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
